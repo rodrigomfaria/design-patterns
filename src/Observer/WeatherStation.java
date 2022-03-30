@@ -10,10 +10,8 @@ public class WeatherStation {
 		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 
 		weatherData.setMeasurements(80, 65, 30.4f);
-		weatherData.removeObserver(forecastDisplay);
 		System.out.println("----------------------------------------------------");
 		weatherData.setMeasurements(82, 70, 29.2f);
-		weatherData.registerObserver(forecastDisplay);
 		System.out.println("----------------------------------------------------");
 		weatherData.setMeasurements(78, 90, 29.2f);
 		System.out.println("----------------------------------------------------");
